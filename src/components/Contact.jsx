@@ -10,14 +10,14 @@ export default function Contact() {
         </div>
 
         <h2 className="text-4xl md:text-5xl font-orbitron font-bold text-[#E2E8F0] mb-6 tracking-tight animate-fade-in-up">
-          Get the Screenplay
+          Get Your Copy
         </h2>
         <p className="text-[#E2E8F0]/40 text-lg mb-12 max-w-md mx-auto font-inter animate-fade-in-up-delayed">
-          Contact {authorInfo.firstName} to order your copy of "{book.title}"
+          Contact {authorInfo.name}
         </p>
 
         <div className="bg-[#09090A] p-10 inline-block shadow-2xl border border-[#FF4500]/20 animate-fade-in-up-delayed-2 hover-lift">
-          <div className="text-5xl font-orbitron font-bold text-[#FF4500] mb-8 tracking-tighter drop-shadow-[0_0_20px_rgba(255,69,0,0.4)]">2112</div>
+          <div className="text-2xl font-orbitron font-bold text-[#FF4500] mb-5 tracking-tighter drop-shadow-[0_0_20px_rgba(255,69,0,0.4)]">꧁⎝ 𓆩༺✧༻𓆪 ⎠꧂</div>
 
           <div className="space-y-4">
             <a

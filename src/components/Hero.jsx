@@ -51,7 +51,7 @@ export default function Hero() {
             <div className="w-24 h-[2px] bg-[#FF4500] mb-8 mx-auto md:mx-0 animate-fade-in-up-delayed animate-neon-glow"></div>
 
             <p className="text-xl text-[#64D28D] mb-6 font-rajdhani font-semibold tracking-wider animate-fade-in-up-delayed">
-              Creator of <span className="text-[#FF4500] font-bold">2112</span>
+              Creator of <span className="text-[#FF4500] font-bold">2112, Serial Killer Explanation, Animating Principle</span>
             </p>
 
             <p className="text-[#E2E8F0]/60 leading-relaxed max-w-lg mx-auto md:mx-0 font-inter text-base border-l-2 border-[#FF4500] pl-6 py-2 animate-fade-in-up-delayed-2">
@@ -75,11 +75,11 @@ export default function Hero() {
                 About the Author
               </a>
               <a
-                href="#book"
-                onClick={(e) => handleScroll(e, '#book')}
+                href="#books"
+                onClick={(e) => handleScroll(e, '#books')}
                 className="px-8 py-4 border-2 border-[#FF4500]/50 text-[#FF4500] font-rajdhani font-bold uppercase tracking-[0.15em] hover:border-[#FF4500] hover:bg-[#FF4500]/5 transition-all text-center hover-lift"
               >
-                2112
+                Books
               </a>
             </div>
           </div>

@@ -1,17 +1,17 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
-import BookDetail from './components/BookDetail'
+import Books from './components/Books'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#09090A]">
       <Navbar />
       <Hero />
       <About />
-      <BookDetail />
+      <Books />
       <Contact />
       <Footer />
     </div>
