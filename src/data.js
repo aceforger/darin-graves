@@ -45,6 +45,15 @@ export const book = [
     status: "coming-soon",
     statusText: "Coming Soon",
     themes: ["Faith", "Revenge", "Love", "Morality"]
+  },
+  {
+    id: 4,
+    title: "Devil's Erudition ",
+    description: "God and the Devil, ever turning Faith for and against. God created people. St. Lucifer did not like it. God designed, produced, and fashioned human beings the best he saw fit, giving him evolution through DNA. As the millions of years go by only the fit survive. The only Saint who stood against people and God's creation, the Devil plays the puppeteer to push and shove into extreme sins, to make commodities, objects and deeds to exploit for individuals to make their lives better. The Devil takes time to learn more about humans on Earth, his Erudition, to gain an understanding of. Warmongers to serial killers, the Devil, does not like what he sees. For their coming future, sees them die, polluting and corrupting the planet before they would ever travel to distant planets! ",
+    coverImage: "/images/erudition.jpg",
+    status: "coming-soon",
+    statusText: "Coming Soon",
+    themes: ["Cosmic Sci-Fi", "Dystopian", "Religious Fiction"]
   }
 ]
 

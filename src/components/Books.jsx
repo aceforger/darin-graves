@@ -30,7 +30,7 @@ export default function Books() {
         </div>
 
         {/* Books Grid - 3 Cards - Smaller */}
-        <div className="grid md:grid-cols-3 gap-30 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-4 gap-10 max-w-5xl mx-auto">
         {book.map((book, i) => (
             <div 
             key={book.id} 
@@ -136,25 +136,25 @@ export default function Books() {
             <div className="p-6 md:p-10">
               <div className="grid md:grid-cols-5 gap-10">
                
-<div className="md:col-span-2">
-  <div className="bg-[#09090A] border border-[#FF4500]/10 flex items-center justify-center">
-    <img
-      src={selectedBook.coverImage}
-      alt={selectedBook.title}
-      className="w-full h-auto max-h-[500px] object-contain"
-      onError={(e) => {
-        e.target.style.display = 'none'
-        e.target.parentElement.classList.add('min-h-[300px]')
-        e.target.parentElement.innerHTML = `
-          <div class="text-center p-8">
-            <div class="text-6xl font-orbitron font-bold text-[#FF4500] mb-3 tracking-tighter">${selectedBook.title.split(' ').map(w => w[0]).join('')}</div>
-            <p class="text-sm font-rajdhani font-bold text-[#E2E8F0] uppercase tracking-wider">${selectedBook.title}</p>
-          </div>
-        `
-      }}
-    />
-  </div>
-</div>
+                <div className="md:col-span-2">
+                <div className="bg-[#09090A] border border-[#FF4500]/10 flex items-center justify-center">
+                    <img
+                    src={selectedBook.coverImage}
+                    alt={selectedBook.title}
+                    className="w-full h-auto max-h-[500px] object-contain"
+                    onError={(e) => {
+                        e.target.style.display = 'none'
+                        e.target.parentElement.classList.add('min-h-[300px]')
+                        e.target.parentElement.innerHTML = `
+                        <div class="text-center p-8">
+                            <div class="text-6xl font-orbitron font-bold text-[#FF4500] mb-3 tracking-tighter">${selectedBook.title.split(' ').map(w => w[0]).join('')}</div>
+                            <p class="text-sm font-rajdhani font-bold text-[#E2E8F0] uppercase tracking-wider">${selectedBook.title}</p>
+                        </div>
+                        `
+                    }}
+                    />
+                </div>
+                </div>
 
                 {/* Book Details */}
                 <div className="md:col-span-3 flex flex-col justify-center space-y-6">
