@@ -1,3 +1,4 @@
+// data.js - Updated with review data
 export const authorInfo = {
   name: "Darin Graves",
   firstName: "Darin",
@@ -48,12 +49,22 @@ export const book = [
   },
   {
     id: 4,
-    title: "Devil's Erudition ",
-    description: "God and the Devil, ever turning Faith for and against. God created people. St. Lucifer did not like it. God designed, produced, and fashioned human beings the best he saw fit, giving him evolution through DNA. As the millions of years go by only the fit survive. The only Saint who stood against people and God's creation, the Devil plays the puppeteer to push and shove into extreme sins, to make commodities, objects and deeds to exploit for individuals to make their lives better. The Devil takes time to learn more about humans on Earth, his Erudition, to gain an understanding of. Warmongers to serial killers, the Devil, does not like what he sees. For their coming future, sees them die, polluting and corrupting the planet before they would ever travel to distant planets! ",
+    title: "Devil's Erudition",
+    description: "God and the Devil, ever turning Faith for and against. God created people. St. Lucifer did not like it. God designed, produced, and fashioned human beings the best he saw fit, giving him evolution through DNA. As the millions of years go by only the fit survive. The only Saint who stood against people and God's creation, the Devil plays the puppeteer to push and shove into extreme sins, to make commodities, objects and deeds to exploit for individuals to make their lives better. The Devil takes time to learn more about humans on Earth, his Erudition, to gain an understanding of. Warmongers to serial killers, the Devil, does not like what he sees. For their coming future, sees them die, polluting and corrupting the planet before they would ever travel to distant planets!",
     coverImage: "/images/erudition.jpg",
-    status: "coming-soon",
-    statusText: "Coming Soon",
-    themes: ["Cosmic Sci-Fi", "Dystopian", "Religious Fiction"]
+    status: "published",
+    statusText: "Available Now",
+    purchaseLinks: [
+      { name: "Amazon", url: "https://www.amazon.com/Devils-Erudition-Darin-Graves/dp/195534730X" },
+      { name: "GoldTouch Press", url: "https://goldtouchpress.com" }
+    ],
+    themes: ["Religion & Faith", "Philosophy", "Dark Fiction"],
+    bookDetails: {
+      publisher: "GoldTouch Press, LLC",
+      isbn: "9781955347303",
+      pages: 93,
+      genre: "Religion & Faith"
+    }
   }
 ]
 
@@ -68,5 +79,38 @@ export const navLinks = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
   { name: "Books", href: "#books" },
+  { name: "Reviews", href: "#reviews" },
   { name: "Contact", href: "#contact" },
+]
+
+export const reviews = [
+  {
+    id: 1,
+    bookTitle: "Devil's Erudition",
+    bookId: 4,
+    reviewer: "Rae Capri",
+    source: "Hollywood Book Reviews",
+    rating: 5,
+    date: "2024",
+    fullReview: `Some people wonder exactly what their true purposes are for being created and living amongst other living organisms on the same planet. If we give off negative phrases or energy, the world will respond in kind or lack thereof. Nature has a great way of snapping us all back into our truer realities, which leaves the open question of how well can we benefit from each other.
+
+In Devil's Erudition, author Darin Graves sets a beautiful scenery from what we can all see if we took time to appreciate just how much the Earth has within its natural beauty and resources. A conversation was had between the Heavenly Father and one of his angels, Lucifer. This conversation could open one's eyes in viewing from the perspective of how ungrateful and undeserving people truly are. This would change the views of many because we're taught and encouraged to be grateful, but there are times when we do not practice gratitude, so we suffer the consequences. The tone of Lucifer's rant could be read as frustration and borderline jealousy, with how he's questioning and demanding a response as it shows his hostile attitude towards God's greatest creation, humankind.
+
+This goes without saying, humans are the uniquely made creations of God's finest work because we are created with his image in mind. Sparking up the unfairness for Lucifer to have been cast out the minute he went against and attempted to become God, while humans drenching in various sins have the opportunity to still go to heaven, demonstrates that. Not only is jealousy used as an element for being the root of humankind's destruction, but Lucifer has also grown fond of becoming studious in learning everything that humans do and are capable of. As you will read through the chapters, there is a common description of a little man in a suit with a bowler hat, who's an onlooker that marvels at the unwrapping scenes before his eyes. Interestingly enough, he prefers to switch between a human or raven, depending on the circumstance; he cannot get enough of keeping a watchful eye on the "piglets," as he refers to humans.
+
+From the first chapter, you are pulled into the premature mind of a serial killer as you learn what his thought processes are like during his encounter with a close friend. This instance has set the tone for the rest of the book because everyone had their unique encounter with the devil himself. Exactly how, one might wonder? By observing humans from the shadows, the willingness to reveal himself at the appropriate time and even provide pointers proves that many have seen him. Leading people to take a step back and regroup, realizing maybe individuals who claimed "the devil made them do it," with some in psychiatric wards, might be telling the truth. In this book with various short stories, the devil has made his presence known, yes, but hasn't directly made humans do anything.
+
+Each chapter allows you to witness a few popular murderers and serial killers with their victims, demonstrating their killing technique, and what was occurring in their mental state. It is interesting to learn about such individuals because many have only read about them in books, while these are actual people who committed such heinous crimes. One particular chapter stands out the most because we are currently experiencing these adjustments in our current world. The elites, if you will, are the most powerful and all-knowing individuals that control the entire world. The special group who rules are designated families that oversee over all others who are part of the mass in their organization. Going back to the conversation Lucifer is having with the Father, it speaks volumes. As humans, we are heavily flawed, but many will continue to believe otherwise.
+
+The topic of space appears a few times in regards to what people are trying to accomplish today, engineering a spacecraft that would ship humans to Mars. A tidbit mentioned about the solar system helped a lot in seeing Lucifer's views because it seems to make sense. We have only been able to inhabit the Earth out of all other areas in the solar system, and there's a reason for it. It is almost as if God created the solar system and galaxies for additional parts to fix up Earth. It is also revealed that humans struggle with "finding their true purpose in life," but are always quick to blame the devil for the evil activities and thoughts they act on. Instead, Lucifer makes it clear that he doesn't necessarily take advantage of the human mind, but that humans want their cake and eat it too.
+
+This was an eye-opener, as I learned how Lucifer views us and that our futures aren't foreseen by anyone, not even God. No one knows what may happen in our future, which should make people reconsider their actions as they go through life. Unfortunately, our prayers for what we hope to accomplish in our future are just prayers that cannot manifest into our reality. I highly recommend this book to everyone as there are lots one can take away from reading this.`,
+    excerpt: "A conversation was had between the Heavenly Father and one of his angels, Lucifer. This conversation could open one's eyes in viewing from the perspective of how ungrateful and undeserving people truly are.",
+    highlights: [
+      "Explores Lucifer's perspective on humanity",
+      "Witness infamous serial killers through the devil's eyes",
+      "Questions the nature of free will and evil",
+      "Philosophical dialogue between God and Lucifer"
+    ]
+  }
 ]

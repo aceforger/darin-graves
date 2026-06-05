@@ -40,7 +40,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <span className="font-orbitron text-xl font-bold tracking-tight text-[#FF4500]">2112</span>
+              <span className="font-orbitron text-xl font-bold tracking-tight text-[#FF4500]">Author</span>
               <span className="text-[#E2E8F0]/20 text-sm font-rajdhani">|</span>
               <span className="text-[#E2E8F0]/50 text-sm font-rajdhani">{authorInfo.name}</span>
             </div>

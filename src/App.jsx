@@ -1,7 +1,9 @@
+// App.jsx - Updated
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Books from './components/Books'
+import Reviews from './components/Reviews'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -12,6 +14,7 @@ function App() {
       <Hero />
       <About />
       <Books />
+      <Reviews />
       <Contact />
       <Footer />
     </div>
