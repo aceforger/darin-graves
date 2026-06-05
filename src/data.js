@@ -54,10 +54,10 @@ export const book = [
     coverImage: "/images/erudition.jpg",
     status: "published",
     statusText: "Available Now",
-    purchaseLinks: [
-      { name: "Amazon", url: "https://www.amazon.com/Devils-Erudition-Darin-Graves/dp/195534730X" },
-      { name: "GoldTouch Press", url: "https://goldtouchpress.com" }
-    ],
+    // purchaseLinks: [
+    //   { name: "Amazon", url: "https://www.amazon.com/Devils-Erudition-Darin-Graves/dp/195534730X" },
+    //   { name: "GoldTouch Press", url: "https://goldtouchpress.com" }
+    // ],
     themes: ["Religion & Faith", "Philosophy", "Dark Fiction"],
     bookDetails: {
       publisher: "GoldTouch Press, LLC",

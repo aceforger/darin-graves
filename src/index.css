@@ -35,6 +35,41 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+/* Neon glow */
+@keyframes neonGlow {
+  0%, 100% { box-shadow: 0 0 10px rgba(255, 69, 0, 0.4), 0 0 30px rgba(255, 69, 0, 0.2); }
+  50% { box-shadow: 0 0 20px rgba(255, 69, 0, 0.6), 0 0 60px rgba(255, 69, 0, 0.3); }
+}
+
+.animate-neon-glow {
+  animation: neonGlow 3s ease-in-out infinite;
+}
+
+/* Tunnel scan */
+@keyframes tunnelScan {
+  0% { transform: translateY(-100%); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+.animate-tunnel-scan {
+  animation: tunnelScan 5s linear infinite;
+}
+
+/* Glitch text */
+@keyframes glitchText {
+  0%, 100% { transform: translate(0); }
+  20% { transform: translate(-2px, 1px); }
+  40% { transform: translate(2px, -1px); }
+  60% { transform: translate(-1px, -1px); }
+  80% { transform: translate(1px, 1px); }
+}
+
+.animate-glitch-text:hover {
+  animation: glitchText 0.3s ease-in-out infinite;
+}
+
 /* Pulse ring */
 @keyframes pulseRing {
   0% { box-shadow: 0 0 0 0 rgba(255, 69, 0, 0.4); }
@@ -77,16 +112,174 @@ body {
   box-shadow: 0 15px 35px rgba(255, 69, 0, 0.15);
 }
 
-/* Twinkling stars */
-@keyframes twinkle {
-  0%, 100% { opacity: 0.2; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.5); }
+/* Glitch text effect */
+@keyframes glitchText {
+  0%, 100% { transform: translate(0); text-shadow: 2px 0 #FF4500, -2px 0 #64D28D; }
+  20% { transform: translate(-3px, 2px); text-shadow: -2px 0 #FF4500, 2px 0 #64D28D; }
+  40% { transform: translate(3px, -1px); text-shadow: 2px 0 #64D28D, -2px 0 #FF4500; }
+  60% { transform: translate(-1px, -2px); text-shadow: -2px 0 #64D28D, 2px 0 #FF4500; }
+  80% { transform: translate(2px, 1px); text-shadow: 2px 0 #FF4500, -2px 0 #64D28D; }
+}
+
+/* Typewriter cursor */
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Matrix rain */
+@keyframes matrixRain {
+  0% { transform: translateY(-100%); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+/* Digital noise */
+@keyframes digitalNoise {
+  0%, 100% { opacity: 0.02; }
+  50% { opacity: 0.05; }
+}
+
+/* Orbiting particles */
+@keyframes orbitParticle {
+  0% { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+/* Hexagon pulse */
+@keyframes hexPulse {
+  0%, 100% { transform: scale(1); opacity: 0.3; }
+  50% { transform: scale(1.2); opacity: 0.6; }
+}
+
+/* Data stream */
+@keyframes dataStream {
+  0% { transform: translateX(-100%); opacity: 0; }
+  20% { opacity: 0.8; }
+  80% { opacity: 0.8; }
+  100% { transform: translateX(200%); opacity: 0; }
+}
+
+/* Border glow trace */
+@keyframes borderTrace {
+  0% { stroke-dashoffset: 1000; }
+  100% { stroke-dashoffset: 0; }
 }
 
 /* Floating up slow */
 @keyframes floatUpSlow {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-15px); }
+}
+
+/* Circuit pulse */
+@keyframes circuitPulse {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.6; }
+}
+
+/* ============ SPACE / UNIVERSE ANIMATIONS ============ */
+
+/* Twinkling stars */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.5); }
+}
+
+.animate-twinkle {
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+.animate-twinkle-delayed {
+  animation: twinkle 3s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.animate-twinkle-slow {
+  animation: twinkle 4s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+/* Rotating nebula */
+@keyframes nebulaRotate {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.1); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+.animate-nebula {
+  animation: nebulaRotate 30s linear infinite;
+}
+
+.animate-nebula-slow {
+  animation: nebulaRotate 45s linear infinite reverse;
+}
+
+/* Aurora gradient flow */
+@keyframes auroraFlow {
+  0% { transform: translateX(-20%) skewX(-5deg); opacity: 0.3; }
+  25% { transform: translateX(10%) skewX(3deg); opacity: 0.6; }
+  50% { transform: translateX(20%) skewX(-2deg); opacity: 0.4; }
+  75% { transform: translateX(0%) skewX(4deg); opacity: 0.7; }
+  100% { transform: translateX(-20%) skewX(-5deg); opacity: 0.3; }
+}
+
+.animate-aurora {
+  animation: auroraFlow 12s ease-in-out infinite;
+}
+
+.animate-aurora-slow {
+  animation: auroraFlow 18s ease-in-out infinite reverse;
+}
+
+/* Floating particles */
+@keyframes floatParticle {
+  0% { transform: translateY(0) translateX(0); opacity: 0; }
+  20% { opacity: 0.8; }
+  80% { opacity: 0.8; }
+  100% { transform: translateY(-100vh) translateX(100px); opacity: 0; }
+}
+
+.animate-float-particle {
+  animation: floatParticle 8s ease-in-out infinite;
+}
+
+.animate-float-particle-delayed {
+  animation: floatParticle 10s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+.animate-float-particle-slow {
+  animation: floatParticle 12s ease-in-out infinite;
+  animation-delay: 6s;
+}
+
+/* Earth glow */
+@keyframes earthGlow {
+  0%, 100% { box-shadow: 0 0 30px rgba(100, 210, 141, 0.2), 0 0 60px rgba(100, 210, 141, 0.1); }
+  50% { box-shadow: 0 0 50px rgba(100, 210, 141, 0.4), 0 0 100px rgba(100, 210, 141, 0.2); }
+}
+
+.animate-earth-glow {
+  animation: earthGlow 4s ease-in-out infinite;
+}
+
+/* Shooting star */
+@keyframes shootingStar {
+  0% { transform: translateX(0) translateY(0); opacity: 0; }
+  5% { opacity: 1; }
+  15% { opacity: 0; transform: translateX(-300px) translateY(300px); }
+  100% { transform: translateX(-300px) translateY(300px); opacity: 0; }
+}
+
+.animate-shooting-star {
+  animation: shootingStar 3s ease-in infinite;
+}
+
+.animate-shooting-star-delayed {
+  animation: shootingStar 4s ease-in infinite;
+  animation-delay: 2s;
 }
 
 /* Slow spin */
@@ -97,6 +290,304 @@ body {
 
 .animate-spin-very-slow {
   animation: spinSlow 60s linear infinite;
+}
+
+/* ============ HEAVENLY ANIMATIONS ============ */
+
+/* Divine pulse */
+@keyframes divinePulse {
+  0%, 100% { 
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2), 0 0 40px rgba(255, 215, 0, 0.1);
+    opacity: 0.8;
+  }
+  50% { 
+    box-shadow: 0 0 40px rgba(255, 215, 0, 0.4), 0 0 80px rgba(255, 215, 0, 0.3), 0 0 120px rgba(255, 248, 220, 0.2);
+    opacity: 1;
+  }
+}
+
+.animate-divine-pulse {
+  animation: divinePulse 3s ease-in-out infinite;
+}
+
+/* Halo rotate */
+@keyframes haloRotate {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.05); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+.animate-halo {
+  animation: haloRotate 20s linear infinite;
+}
+
+/* Seraphim wings effect */
+@keyframes wingFlutter {
+  0%, 100% { opacity: 0.1; transform: scaleY(1); }
+  50% { opacity: 0.3; transform: scaleY(1.2); }
+}
+
+.animate-wings {
+  animation: wingFlutter 4s ease-in-out infinite;
+}
+
+/* Golden light rays */
+@keyframes lightRays {
+  0% { opacity: 0.1; transform: rotate(-5deg); }
+  50% { opacity: 0.3; transform: rotate(5deg); }
+  100% { opacity: 0.1; transform: rotate(-5deg); }
+}
+
+.animate-light-rays {
+  animation: lightRays 8s ease-in-out infinite;
+}
+
+/* Ascending light */
+@keyframes ascendLight {
+  0% { transform: translateY(100%); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-100%); opacity: 0; }
+}
+
+.animate-ascend {
+  animation: ascendLight 6s linear infinite;
+}
+
+/* Pearlescent shimmer */
+@keyframes pearlShimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.animate-pearl {
+  background: linear-gradient(90deg, transparent, rgba(255, 248, 220, 0.1), rgba(255, 215, 0, 0.2), rgba(255, 248, 220, 0.1), transparent);
+  background-size: 200% 100%;
+  animation: pearlShimmer 3s linear infinite;
+}
+
+/* ============ DARK THEME ANIMATIONS ============ */
+
+/* Dark pulse */
+@keyframes darkPulse {
+  0%, 100% { 
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.15), 0 0 40px rgba(75, 0, 130, 0.1);
+    opacity: 0.6;
+  }
+  50% { 
+    box-shadow: 0 0 35px rgba(255, 69, 0, 0.25), 0 0 70px rgba(75, 0, 130, 0.15);
+    opacity: 0.9;
+  }
+}
+
+.animate-dark-pulse {
+  animation: darkPulse 4s ease-in-out infinite;
+}
+
+/* Shadow drift */
+@keyframes shadowDrift {
+  0% { transform: translateX(0) translateY(0); opacity: 0.1; }
+  50% { transform: translateX(20px) translateY(-10px); opacity: 0.2; }
+  100% { transform: translateX(0) translateY(0); opacity: 0.1; }
+}
+
+.animate-shadow-drift {
+  animation: shadowDrift 10s ease-in-out infinite;
+}
+
+/* Crimson flicker */
+@keyframes crimsonFlicker {
+  0%, 100% { opacity: 0.05; text-shadow: none; }
+  50% { opacity: 0.15; text-shadow: 0 0 8px rgba(255, 69, 0, 0.3); }
+}
+
+.animate-crimson-flicker {
+  animation: crimsonFlicker 3s ease-in-out infinite;
+}
+
+/* Void whisper */
+@keyframes voidWhisper {
+  0% { opacity: 0; transform: scale(0.95); }
+  50% { opacity: 0.08; transform: scale(1.05); }
+  100% { opacity: 0; transform: scale(0.95); }
+}
+
+.animate-void-whisper {
+  animation: voidWhisper 8s ease-in-out infinite;
+}
+
+/* Dark matter flow */
+@keyframes darkMatterFlow {
+  0% { background-position: 0% 50%; opacity: 0.05; }
+  50% { background-position: 100% 50%; opacity: 0.15; }
+  100% { background-position: 0% 50%; opacity: 0.05; }
+}
+
+.animate-dark-matter {
+  animation: darkMatterFlow 15s ease-in-out infinite;
+}
+
+/* Abyssal breathing */
+@keyframes abyssalBreath {
+  0%, 100% { 
+    box-shadow: inset 0 0 50px rgba(75, 0, 130, 0.1), 0 0 30px rgba(139, 0, 0, 0.05);
+  }
+  50% { 
+    box-shadow: inset 0 0 80px rgba(75, 0, 130, 0.2), 0 0 50px rgba(139, 0, 0, 0.1);
+  }
+}
+
+.animate-abyssal {
+  animation: abyssalBreath 6s ease-in-out infinite;
+}
+
+/* Gloom particles */
+@keyframes gloomRise {
+  0% { transform: translateY(0); opacity: 0; }
+  20% { opacity: 0.3; }
+  80% { opacity: 0.2; }
+  100% { transform: translateY(-100vh); opacity: 0; }
+}
+
+.animate-gloom {
+  animation: gloomRise 9s linear infinite;
+}
+
+/* ============ BLACK HOLE ANIMATIONS ============ */
+
+/* Accretion disk spin - Fast inner, slow outer */
+@keyframes accretionSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-accretion-fast {
+  animation: accretionSpin 8s linear infinite;
+}
+
+.animate-accretion-medium {
+  animation: accretionSpin 15s linear infinite;
+}
+
+.animate-accretion-slow {
+  animation: accretionSpin 25s linear infinite;
+}
+
+/* Gravitational lensing warp */
+@keyframes gravitationalWarp {
+  0%, 100% { 
+    transform: scale(1) rotate(0deg);
+    filter: blur(4px);
+  }
+  25% { 
+    transform: scale(1.02) rotate(0.5deg);
+    filter: blur(5px);
+  }
+  50% { 
+    transform: scale(1) rotate(0deg);
+    filter: blur(3px);
+  }
+  75% { 
+    transform: scale(1.01) rotate(-0.5deg);
+    filter: blur(4px);
+  }
+}
+
+.animate-gravitational-lens {
+  animation: gravitationalWarp 12s ease-in-out infinite;
+}
+
+/* Event horizon pulse */
+@keyframes eventHorizonPulse {
+  0%, 100% { 
+    box-shadow: 0 0 40px rgba(0,0,0,0.9), 0 0 80px rgba(0,0,0,0.7), inset 0 0 40px rgba(0,0,0,0.95);
+    transform: scale(1);
+  }
+  50% { 
+    box-shadow: 0 0 60px rgba(0,0,0,0.95), 0 0 100px rgba(0,0,0,0.8), inset 0 0 60px rgba(0,0,0,0.98);
+    transform: scale(1.02);
+  }
+}
+
+.animate-event-horizon {
+  animation: eventHorizonPulse 4s ease-in-out infinite;
+}
+
+/* Plasma hot spot orbit */
+@keyframes plasmaOrbit {
+  0% { transform: rotate(0deg) translateX(340px); opacity: 0.3; }
+  25% { opacity: 0.7; }
+  50% { opacity: 0.3; }
+  75% { opacity: 0.8; }
+  100% { transform: rotate(360deg) translateX(340px); opacity: 0.3; }
+}
+
+.animate-plasma-orbit {
+  animation: plasmaOrbit 12s linear infinite;
+}
+
+/* Relativistic jet */
+@keyframes relativisticJet {
+  0%, 100% { 
+    opacity: 0.2;
+    transform: scaleY(1);
+  }
+  50% { 
+    opacity: 0.5;
+    transform: scaleY(1.1);
+  }
+}
+
+.animate-jet {
+  animation: relativisticJet 3s ease-in-out infinite;
+}
+
+/* Spaghettification stretch */
+@keyframes spaghettify {
+  0% { transform: scaleX(1) scaleY(1); opacity: 0.5; }
+  100% { transform: scaleX(0.1) scaleY(10); opacity: 0; }
+}
+
+/* Gravitational wave ripple */
+@keyframes gravityWave {
+  0% { 
+    transform: scale(1);
+    opacity: 0.1;
+    border-width: 2px;
+  }
+  100% { 
+    transform: scale(2);
+    opacity: 0;
+    border-width: 0px;
+  }
+}
+
+.animate-gravity-wave {
+  animation: gravityWave 4s ease-out infinite;
+}
+
+/* X-ray burst */
+@keyframes xrayBurst {
+  0%, 100% { opacity: 0; transform: scale(0.8); }
+  20% { opacity: 0.6; transform: scale(1.2); }
+  40% { opacity: 0; transform: scale(0.9); }
+}
+
+.animate-xray-burst {
+  animation: xrayBurst 6s ease-in-out infinite;
+}
+
+/* Hawking radiation glow */
+@keyframes hawkingRadiation {
+  0%, 100% { 
+    box-shadow: 0 0 20px rgba(255,69,0,0.1), 0 0 40px rgba(255,69,0,0.05);
+  }
+  50% { 
+    box-shadow: 0 0 30px rgba(255,69,0,0.2), 0 0 60px rgba(255,69,0,0.1), 0 0 90px rgba(255,99,71,0.05);
+  }
+}
+
+.animate-hawking {
+  animation: hawkingRadiation 5s ease-in-out infinite;
 }
 
 /* ============ TORUS / ELLIPTICAL RING ANIMATIONS ============ */
@@ -111,12 +602,6 @@ body {
     opacity: 1;
     filter: blur(5px);
   }
-}
-
-/* Accretion disk spin */
-@keyframes accretionSpin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
 
 /* Photon ring orbit - fast inner ring */
@@ -149,4 +634,72 @@ body {
     opacity: 0;
     border-width: 0px;
   }
+}
+
+/* Synchrotron radiation flicker */
+@keyframes synchrotronFlicker {
+  0%, 100% { opacity: 0.4; }
+  33% { opacity: 0.7; }
+  66% { opacity: 0.5; }
+}
+
+/* Magnetic field line warp */
+@keyframes fieldLineWarp {
+  0% { transform: scale(1, 1) rotate(-15deg); }
+  50% { transform: scale(1.05, 0.95) rotate(-12deg); }
+  100% { transform: scale(1, 1) rotate(-15deg); }
+}
+
+/* Plasma convection */
+@keyframes plasmaConvection {
+  0% { transform: translate(0, 0) scale(1); opacity: 0.6; }
+  25% { transform: translate(5px, -3px) scale(1.02); opacity: 0.8; }
+  50% { transform: translate(-3px, -5px) scale(0.98); opacity: 0.5; }
+  75% { transform: translate(-5px, 3px) scale(1.01); opacity: 0.7; }
+  100% { transform: translate(0, 0) scale(1); opacity: 0.6; }
+}
+
+/* Ergosphere rotation - dragging space-time */
+@keyframes ergosphereDrag {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Coronel mass ejection */
+@keyflare {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.2); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 0; }
+}
+
+.animate-torus-pulse {
+  animation: torusPulse 4s ease-in-out infinite;
+}
+
+.animate-photon-orbit {
+  animation: photonOrbit 6s linear infinite;
+}
+
+.animate-jet-pulse {
+  animation: jetPulse 3s ease-in-out infinite;
+}
+
+.animate-gravity-wave {
+  animation: gravityWave 5s ease-out infinite;
+}
+
+.animate-synchrotron {
+  animation: synchrotronFlicker 2s ease-in-out infinite;
+}
+
+.animate-field-warp {
+  animation: fieldLineWarp 8s ease-in-out infinite;
+}
+
+.animate-plasma-convection {
+  animation: plasmaConvection 6s ease-in-out infinite;
+}
+
+.animate-ergosphere {
+  animation: ergosphereDrag 40s linear infinite;
 }

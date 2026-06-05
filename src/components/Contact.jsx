@@ -17,7 +17,6 @@ export default function Contact() {
         </p>
 
         <div className="bg-[#09090A] p-10 inline-block shadow-2xl border border-[#FF4500]/20 animate-fade-in-up-delayed-2 hover-lift">
-          <div className="text-2xl font-orbitron font-bold text-[#FF4500] mb-5 tracking-tighter drop-shadow-[0_0_20px_rgba(255,69,0,0.4)]">꧁⎝ 𓆩༺✧༻𓆪 ⎠꧂</div>
 
           <div className="space-y-4">
             <a
