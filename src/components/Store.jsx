@@ -45,7 +45,7 @@ export default function Store() {
         </div>
 
         {/* Books Grid - 4 in a row */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {book.map((bookItem, i) => (
             <div 
               key={bookItem.id} 
@@ -110,26 +110,29 @@ export default function Store() {
                     </div>
                   )}
 
-                  {/* Purchase Links - Directly exposed */}
-                  <div className="mt-auto space-y-1.5">
-                    {bookItem.status === 'published' && bookItem.purchaseLinks ? (
-                      bookItem.purchaseLinks.map((link, i) => (
-                        <a
-                          key={i}
-                          href={link.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="block w-full py-2 bg-[#64D28D] text-[#09090A] font-rajdhani font-bold text-[10px] uppercase tracking-[0.1em] hover:bg-[#4ab872] transition-all text-center hover-lift"
-                        >
-                          {link.name}
-                        </a>
-                      ))
-                    ) : (
-                      <div className="block w-full py-2 bg-[#FF4500]/5 border border-[#FF4500]/20 text-[#FF4500]/60 font-rajdhani font-bold text-[9px] uppercase tracking-[0.1em] text-center">
-                        Coming Soon
+                  {/* Purchase Links - 2 buttons per line */}
+                  {bookItem.status === 'published' && bookItem.purchaseLinks ? (
+                    <div className="mt-auto">
+                      <div className="grid grid-cols-2 gap-1.5">
+                        {bookItem.purchaseLinks.map((link, i) => (
+                          <a
+                            key={i}
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="py-2 bg-[#64D28D] text-[#09090A] font-rajdhani font-bold text-[9px] uppercase tracking-[0.05em] hover:bg-[#4ab872] transition-all text-center hover-lift truncate"
+                            title={link.name}
+                          >
+                            {link.name}
+                          </a>
+                        ))}
                       </div>
-                    )}
-                  </div>
+                    </div>
+                  ) : (
+                    <div className="block w-full py-2 bg-[#FF4500]/5 border border-[#FF4500]/20 text-[#FF4500]/60 font-rajdhani font-bold text-[9px] uppercase tracking-[0.1em] text-center">
+                      Coming Soon
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

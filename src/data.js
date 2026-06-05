@@ -18,8 +18,14 @@ export const book = [
     description: "The book is about a story from 2112. All creations from the novel were written by Darin Graves. The album has the story; my novel has all actions within.",
     tagline: "The album has the story. The novel has all actions within.",
     coverImage: "/images/2112.jpg",
-    status: "coming-soon",
-    statusText: "Coming Soon",
+    status: "published",
+    statusText: "Available Now",
+    purchaseLinks: [
+      { name: "Amazon", url: "https://www.amazon.com/2112-Darin-Graves-ebook/dp/B0H2RDWTSD/ref=sr_1_1?crid=15G1YNBEPQ5KA&dib=eyJ2IjoiMSJ9.eHqDZpow3vgfmW4b7RijTw.81orCv97HjYjkMMBL1cn0YWu0mPlYO52RyeDqpYjxCA&dib_tag=se&keywords=2112+darin+graves&qid=1780696250&s=books&sprefix=2112+darin+grave%2Cstripbooks-intl-ship%2C374&sr=1-1" },
+      { name: "Gandhi", url: "https://www.gandhi.com.mx/2112-9798256049775/p?srsltid=AfmBOops3UwU0CJByK59MIIofyZLvzFWwHEa-ia_i3JTigbdJoYZB-KX" },
+      { name: "Bol.com", url: "https://www.bol.com/nl/nl/p/2112/9300000295633547/" },
+      { name: "Saxo", url: "https://www.saxo.com/dk/2112_bog_9798256047863?srsltid=AfmBOopUtxpx_Jh5do34H4LRyrwTyiqoVVjxD8SxDFNJGMZ7Xiw2CJyg" }
+    ],
     themes: ["Sci-Fi", "Dystopian", "Revenge", "Faith"]
   },
   {
@@ -29,12 +35,12 @@ export const book = [
     description2: "As bodies disappear and fear grows, a relentless detective and a conflicted priest find themselves drawn into a chilling cat-and-mouse pursuit, each step revealing uncomfortable truths about the nature of evil, and the thin line that separates salvation from damnation.",
     description3: "A psychological thriller soaked in dread and moral ambiguity, this is not a story about justice. It's a story about what we refuse to see, until it's far too late.",
     coverImage: "/images/serial-killer.jpg",
-    status: "published",
-    statusText: "Available Now",
-    purchaseLinks: [
-      { name: "Amazon", url: "https://www.amazon.com/Serial-Killer-Explanation-Darin-Graves-ebook/dp/B0GJM36MM5/ref=tmm_kin_swatch_0" },
-      { name: "GoodReads", url: "https://www.goodreads.com/book/show/241841897-serial-killer-explanation" }
-    ],
+    status: "Coming Soon",
+    statusText: "Coming Soon",
+    // purchaseLinks: [
+    //   { name: "Amazon", url: "https://www.amazon.com/Serial-Killer-Explanation-Darin-Graves-ebook/dp/B0GJM36MM5/ref=tmm_kin_swatch_0" },
+    //   { name: "GoodReads", url: "https://www.goodreads.com/book/show/241841897-serial-killer-explanation" }
+    // ],
     themes: ["Psychological Thriller", "Crime", "Moral Ambiguity", "Suspense"]
   },
   {
@@ -52,8 +58,8 @@ export const book = [
     title: "Devil's Erudition",
     description: "God and the Devil, ever turning Faith for and against. God created people. St. Lucifer did not like it. God designed, produced, and fashioned human beings the best he saw fit, giving him evolution through DNA. As the millions of years go by only the fit survive. The only Saint who stood against people and God's creation, the Devil plays the puppeteer to push and shove into extreme sins, to make commodities, objects and deeds to exploit for individuals to make their lives better. The Devil takes time to learn more about humans on Earth, his Erudition, to gain an understanding of. Warmongers to serial killers, the Devil, does not like what he sees. For their coming future, sees them die, polluting and corrupting the planet before they would ever travel to distant planets!",
     coverImage: "/images/erudition.jpg",
-    status: "published",
-    statusText: "Available Now",
+    status: "coming-soon",
+    statusText: "Coming Soon",
     // purchaseLinks: [
     //   { name: "Amazon", url: "https://www.amazon.com/Devils-Erudition-Darin-Graves/dp/195534730X" },
     //   { name: "GoldTouch Press", url: "https://goldtouchpress.com" }
