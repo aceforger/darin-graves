@@ -70,7 +70,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           <a href="/" onClick={handleLogoClick} className="flex items-center gap-3 group">
             <span className="font-orbitron text-2xl font-bold text-[#FF4500] tracking-[0.1em] group-hover:animate-glitch-text">
-              STEVEN BENTLEY
+              DARIN GRAVES
             </span>
           </a>
 
