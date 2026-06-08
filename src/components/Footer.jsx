@@ -74,12 +74,12 @@ export default function Footer() {
             >
               {authorInfo.email}
             </a>
-            <a
+            {/* <a
               href={`tel:${authorInfo.phone}`}
               className="text-[#E2E8F0]/20 hover:text-[#FF4500] transition-colors text-sm font-inter block mt-2"
             >
               {authorInfo.phone}
-            </a>
+            </a> */}
           </div>
         </div>
 

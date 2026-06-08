@@ -3,7 +3,7 @@ export const authorInfo = {
   name: "Darin Graves",
   firstName: "Darin",
   email: "ddg2112@yahoo.com",
-  phone: "(952) 228-4374",
+  
   bio: "Darin Graves is a writer and creator whose work is deeply inspired by the legendary Neil Peart. Though he never met his mentor, Peart's lyrics changed his life and shaped his creative vision. His works explore themes of faith, revenge, morality, and the human condition.",
   bio2: "Love story turns tragic. His entire life turns in love, revenge and faith in his life story. The main character's faith in what he believes in is questioned by himself. Like every person wants to go to heaven, but his actions — killing the man who murdered his loved one — take away his key to heaven's gates?",
   inspiration: "Neil Peart was my mentor; I never met him. His lyrics changed my life.",
