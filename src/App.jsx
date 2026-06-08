@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Books from './components/Books'
 import Gallery from './components/Gallery'
+import Video from './components/Video'
 import Reviews from './components/Reviews'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -17,6 +18,7 @@ function HomePage() {
       <About />
       <Books />
       <Gallery />
+      <Video />
       <Reviews />
       <Contact />
       <Footer />
