@@ -85,6 +85,7 @@ export const navLinks = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
   { name: "Books", href: "#books" },
+  { name: "Gallery", href: "#gallery" },
   { name: "Reviews", href: "#reviews" },
   { name: "Contact", href: "#contact" },
 ]

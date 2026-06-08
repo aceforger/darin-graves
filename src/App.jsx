@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Books from './components/Books'
+import Gallery from './components/Gallery'
 import Reviews from './components/Reviews'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -15,6 +16,7 @@ function HomePage() {
       <Hero />
       <About />
       <Books />
+      <Gallery />
       <Reviews />
       <Contact />
       <Footer />
