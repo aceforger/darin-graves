@@ -45,7 +45,7 @@ export default function Footer() {
               <span className="text-[#E2E8F0]/50 text-sm font-rajdhani">{authorInfo.name}</span>
             </div>
             <p className="text-[#E2E8F0]/20 text-sm font-inter leading-relaxed">
-              Screenwriter & Creator of "{book.title}"
+              Screenwriter & Creator
             </p>
           </div>
 

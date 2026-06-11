@@ -38,7 +38,7 @@ export default function Video() {
               preload="metadata"
             >
               <source
-                src="https://res.cloudinary.com/dlnjwoids/video/upload/v1780945056/Rush2112_to_become_a_movie_author_fjsdwf.mp4"
+                src="https://res.cloudinary.com/dlnjwoids/video/upload/v1781210364/2112_video_tb3wvc.mp4"
                 type="video/mp4"
               />
               Your browser does not support the video tag.
